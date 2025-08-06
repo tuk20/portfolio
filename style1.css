@@ -1,0 +1,480 @@
+body {
+    cursor: url('smiley.png'), auto;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px 40px;
+    background-color: #0f4033;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    animation: fadeInDown 1s ease-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-buttons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.header-buttons a:hover {
+    background-color: #ffffff;
+    color: #0b0b0b;
+    transform: scale(1.05);
+}
+
+.header-spacing {
+    height: 30px;
+}
+
+.hero-section-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    background-image: url('lyante.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 515.91px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0f4033;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #0f4033;
+    width: 110px;
+    text-align: center;
+}
+
+.hero-button:hover {
+    background: white;
+    color: #0f4033;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    flex: 1;
+    padding: 40px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.hero-content p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.container {
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.case-study {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.case-study:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.case-study img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.case-study-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.case-study h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin: 0 0 10px;
+}
+
+.case-study p {
+    color: #333333;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.case-study a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #0b0b0b;
+    background-color: #a7f0d1;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.case-study a:hover {
+    background-color: #8bd5b9;
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #0f4033;
+    color: #ffffff;
+    margin-top: 40px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.footer-email {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    background-color: #ffffff;
+    color: #0b0b0b;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        height: 300px;
+        flex: none;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Design Process Section */
+.design-process-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-header h2 {
+    font-size: 2rem;
+    color: #0f4033;
+    margin-bottom: 15px;
+}
+
+.process-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Design Methods Grid */
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.method-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.method-card i {
+    font-size: 2.5rem;
+    color: #0f4033;
+    margin-bottom: 20px;
+}
+
+.method-card h4 {
+    color: #0f4033;
+    margin: 15px 0 10px;
+}
+
+/* Updated Process Flow to match Design Methods */
+.process-section {
+    margin-bottom: 60px;
+}
+
+.process-section h3 {
+    font-size: 1.5rem;
+    color: #0f4033;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.process-flow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.process-phase {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.process-phase:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.phase-icon {
+    width: 60px;
+    height: 60px;
+    background: #f0f7f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.phase-icon i {
+    font-size: 1.5rem;
+    color: #0f4033;
+}
+
+.phase-content {
+    padding: 0;
+    box-shadow: none;
+    min-height: auto;
+}
+
+.phase-content h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.phase-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.phase-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Updated Framework Grid with Hover Effects */
+.framework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.framework-phase {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.framework-phase:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.framework-phase h4 {
+    color: #0f4033;
+    margin-top: 0;
+    border-bottom: 2px solid #0f4033;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.framework-phase ul {
+    padding-left: 20px;
+    margin: 15px 0 0;
+}
+
+.framework-phase li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
