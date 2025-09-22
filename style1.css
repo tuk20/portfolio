@@ -9,6 +9,9 @@ body {
 
 header {
     padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #0f4033;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
